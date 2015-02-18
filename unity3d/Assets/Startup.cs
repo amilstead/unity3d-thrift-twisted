@@ -8,7 +8,7 @@ public class Startup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        using (ThriftClient clientService = new ThriftClient("User.v1", "192.168.1.114"))
+        using (ThriftClient clientService = new ThriftClient("User.v1"))
         {
             User.Client client = (User.Client)clientService.GetClient();
             UserModel user = null;
