@@ -54,6 +54,9 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Thrift">
+ <HintPath>D:/Development/unity3d-thrift-twisted/unity3d-thrift-twisted/unity3d/Assets/Thrift.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
