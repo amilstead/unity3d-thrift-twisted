@@ -9,20 +9,20 @@ The project was tested using a Windows client and a Ubuntu 14.04 server.
 The project is split into three parts:
 ## C#/Unity3D ##
 
-The [unity3d folder](blob/master/unity3d) contains a Visual Studio project, generated C# Thrift source files, a collection of Unity3D assets, and a Unity3D Scene with a Startup script attached.
+The [unity3d folder](unity3d) contains a Visual Studio project, generated C# Thrift source files, a collection of Unity3D assets, and a Unity3D Scene with a Startup script attached.
 
 The Startup script uses a small [context-managed](https://msdn.microsoft.com/en-us/library/yh598w02.aspx) wrapper object that simply sets up a mapping between generated sources to provide an easy client connection API.
 
 
 ## python/twisted ##
-The [python folder](blob/master/python) contains a python-twisted application, generated python-twisted source files, and a requirements file (for easy pip-based installation) to demonstrate a twisted server using generated Thrift RPC code.
+The [python folder](python) contains a python-twisted application, generated python-twisted source files, and a requirements file (for easy pip-based installation) to demonstrate a twisted server using generated Thrift RPC code.
 
-The python application also employs the use of [SQLAlchemy](http://www.sqlalchemy.org/) for simple data access and a [small helper class](blob/master/python/app/services/core.py) for mapping services into a multi-service server.
+The python application also employs the use of [SQLAlchemy](http://www.sqlalchemy.org/) for simple data access and a [small helper class](python/app/services/core.py) for mapping services into a multi-service server.
 
 **NOTE**: While the demo app uses the SQLAlchemy ORM, it is primarily for **demonstration purposes only**. There have been a number of discussions (see [here](http://stackoverflow.com/questions/21076105/is-this-an-acceptable-way-to-make-threaded-sqlalchemy-queries-from-twisted) and [here](http://stackoverflow.com/questions/3017101/twisted-sqlalchemy-and-the-best-way-to-do-it)) on the considerations one needs to take when using SQLAlchemy's ORM with the Twisted framework, as well as a [library](http://blog.atleastfornow.net/2013/alchimia/) which supports non-blocking DB calls. In all likelihood, using the SQLAlchemy ORM out of the box with Twisted is probably a bad idea. It was just the easiest thing to get up and running for a tutorial on Thrift integration.
 
 ## Thrift ##
-The [thrift folder](blob/master/thrift) contains two `.thrift` files used by the thrift binary to generate both twisted specific python and C# sources for the project.
+The [thrift folder](thrift) contains two `.thrift` files used by the thrift binary to generate both twisted specific python and C# sources for the project.
 
 The files are fairly simple. 
 
@@ -90,7 +90,7 @@ By default, the server listens on all interfaces (`0.0.0.0`). To see what your s
 
 *"How do I change the IP/Port that my server is trying to connect to?"*
 
-To change the IP reference for the server, go to [the Startup script](blob/master/unity3d/Assets/Startup.cs) and change the following lines to reference your server's IPv4 address and/or port:
+To change the IP reference for the server, go to [the Startup script](unity3d/Assets/Startup.cs) and change the following lines to reference your server's IPv4 address and/or port:
 
 	using (ThriftClient clientService = new ThriftClient("User.v1"))
 to:
