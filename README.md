@@ -80,7 +80,7 @@ Once the project is loaded, simply press the play button at the top of the edito
 
 That means:
 
-1. The client is not pointing to the right IP address
+1. The client is not pointing to the right IP address/Port
 2. The server isn't running
 3. You have some local firewall blocking connections from client to server.
 
@@ -106,7 +106,7 @@ to:
 ----------
 *"Unity keeps complainig about unliked libraries/Thrift won't compile with the Unity project. What gives?"*
 
-You may need to compile it yourself or find some way of acquiring the linked library (I'd suggest downloading and compiling the source, as a Visual Studio solution for doing so is included in the Thrift source code). If this happens, after you've acquired a good version of the DLL, simply open Unity project then drag the DLL file into the unity editor and drop it onto the `Assets` folder.
+You may need to compile it yourself or find some way of acquiring the linked library (I'd suggest downloading and compiling the source, as a Visual Studio solution for doing so is included in the Thrift source code). If this happens, after you've acquired a good version of the DLL, simply open the Unity project then drag the DLL file into the unity editor and drop it onto the `Assets` folder.
 
 ----------
 
