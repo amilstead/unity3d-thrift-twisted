@@ -62,3 +62,8 @@ obj
 Temp
 Library
 thrift*.exe
+
+
+# ignore pycharm files.
+.idea
+.idea/*
