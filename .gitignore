@@ -58,3 +58,7 @@ target/
 obj/*
 Temp/*
 Library/*
+obj
+Temp
+Library
+thrift*.exe
