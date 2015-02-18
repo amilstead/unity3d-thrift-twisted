@@ -52,3 +52,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+# Unity3D build files
+obj/*
+Temp/*
