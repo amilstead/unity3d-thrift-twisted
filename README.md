@@ -84,7 +84,7 @@ That means:
 2. The server isn't running
 3. You have some local firewall blocking connections from client to server.
 
-By default, the server listens on all interfaces (`0.0.0.0`). To see what your server's IP address is, just run the command (assuming a linux machine): `ifconfig` to see what your IP is.
+By default, the server listens on all interfaces (`0.0.0.0`). To see what your server's IP address is, just run the command (assuming a linux machine): `ifconfig`
 
 ----------
 
