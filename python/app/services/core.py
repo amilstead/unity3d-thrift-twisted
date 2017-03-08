@@ -5,7 +5,7 @@ class ServiceHandler(object):
         raise NotImplementedError("Sub-class must implement service_name.")
 
     @classmethod
-    def service_name(cls):
+    def processor(cls):
         raise NotImplementedError("Sub-class must implement processor.")
 
 
