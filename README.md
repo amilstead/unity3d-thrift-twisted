@@ -110,3 +110,10 @@ You may need to compile it yourself or find some way of acquiring the linked lib
 
 ----------
 
+*"How to share server state between clients?"*
+
+In plain Twisted, I use ProtocolFactory instance to share server state between connected clients (represented by Protocol instances). But how can one share some state when using thrift-generated services code?
+
+----------
+
+
