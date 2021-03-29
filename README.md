@@ -1,3 +1,5 @@
+> NOTE: Thrift [dropped support for C#](https://github.com/apache/thrift/blob/master/CHANGES.md#0140) in `0.14.0`. In theory, this code should work for versions `0.13.0` and earlier.
+
 # unity3d-thrift-twisted
 
 This is a demo codebase for linking up a [Unity3D](http://unity3d.com/) client with a [python twisted](https://twistedmatrix.com/trac/) server using the [Apache Thrift](https://thrift.apache.org/) RPC toolset.
@@ -35,6 +37,8 @@ Contains a shared service object which the `user` service inherits from.
 Contains a user service and a struct definition for sending users back and forth from server to client.
 
 There is extensive documentation on the thrift protocol all across the interwebs and a wonderful [example file](https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=blob_plain;f=tutorial/tutorial.thrift) in the source code.
+
+See [here](https://thrift.apache.org/tutorial/csharp.html) for an example of how to compile Thrift definitions for C#.
 
 # Installation #
 Now onto setting up the projects!
